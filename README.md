@@ -38,20 +38,23 @@ a DocBlock (including asterisks) or by passing an object supporting the
 
 Example:
 
-    $class = new ReflectionClass('MyClass');
-    $phpdoc = new \phpDocumentor\Reflection\DocBlock($class);
+```php
+$class = new ReflectionClass('MyClass');
+$phpdoc = new \phpDocumentor\Reflection\DocBlock($class);
+```
 
 or
 
-    $docblock = <<<DOCBLOCK
-    /**
-     * This is a short description.
-     *
-     * This is a *long* description.
-     *
-     * @return void
-     */
-    DOCBLOCK;
+```php
+$docblock = <<<DOCBLOCK
+/**
+ * This is a short description.
+ *
+ * This is a *long* description.
+ *
+ * @return void
+ */
+DOCBLOCK;
 
-    $phpdoc = new \phpDocumentor\Reflection\DocBlock($docblock);
-
+$phpdoc = new \phpDocumentor\Reflection\DocBlock($docblock);
+```
